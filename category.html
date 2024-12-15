@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Store</title>
+
+    <!-- =====  Bootstrap CSS  ===== -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+    <!-- =====  Custom CSS  ===== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- =====  Font Awesome CSS  ===== -->
+    <link rel="stylesheet" href="assets/fonts/fontawsome/all.min.css" />
+
+    <!-- =====  Swiper CSS  ===== -->
+    <link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- ----------------------------navbar started ----------------------------------------->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid align-items-center p-0">
+            <a
+              class="navbar-brand logo order-1 order-lg-0 me-auto me-lg-3 ms-3 ms-lg-0"
+              href="index.html"
+              >SHOP.CO</a
+            >
+            <button
+              class="navbar-toggler order-0 order-lg-1 hamburger"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Man</a></li>
+                    <li><a class="dropdown-item" href="#">Women</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Browse All</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >On Sale</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >New Arrivals</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >Brands</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex position-relative">
+                <input
+                  class="form-control me-2 form search-bar"
+                  type="search"
+                  placeholder="Search for products..."
+                  aria-label="Search"
+                /><i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </form>
+            </div>
+            <div class="nav-icons order-2">
+              <a href=""
+                ><i
+                  class="fa-solid fa-magnifying-glass d-static d-lg-none search-icon"
+                ></i
+              ></a>
+              <a href=""><i class="fa-solid fa-cart-shopping shop-icon"></i></a>
+              <a href=""><i class="fa-regular fa-circle-user user-icon"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ------------------------------Casual started------------------------------------------->
+    <section id="casual-section">
+        <div class="container hr-1 breadcrumb-container ps-2">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb d-flex align-items-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <li class="breadcrumb-item active-page" aria-current="page">Casual</li>
+              </ol>
+            </nav>
+          </div>
+     </section>
+    <!-- /* ===== casual Section started =====  */ -->
+     <div class="casual-category">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 p-0">
+                  <div class="filter-main-div d-md-flex d-none">
+                    <div class="filter-heading d-flex align-items-center justify-content-between">
+                      <h4 class="mb-0">Filters</h4>
+                      <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <hr class="m-0">
+                    <div class="filter-products">
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">T-shirts</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Shorts</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Shirts</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Hoodie</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Jeans</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <hr class="m-0">
+                    <hr class="m-0">
+                    <div class="filter-color-div">
+                      <div class="filter-color-top d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">Colours</h4>
+                        <i class="fa-solid fa-chevron-up"></i>
+                      </div>
+                      <div class="filter-color-bottom d-flex flex-wrap">
+                        <div class="d-flex justify-content-between">
+                          <div class="filter-colors f-c-green"></div>
+                          <div class="filter-colors f-c-red"></div>
+                          <div class="filter-colors f-c-yellow"></div>
+                          <div class="filter-colors f-c-orange"></div>
+                          <div class="filter-colors f-c-sblue"></div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="filter-colors f-c-blue"></div>
+                          <div class="filter-colors f-c-purple"></div>
+                          <div class="filter-colors f-c-pink"></div>
+                          <div class="filter-colors f-c-white"></div>
+                          <div class="filter-colors f-c-black"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="filter-size-div">
+                      <div class="filter-color-top d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">Size</h4>
+                        <i class="fa-solid fa-chevron-up"></i>
+                      </div>
+                      <div class="filter-size d-flex flex-wrap">
+                        <button class="filter-size-btn">XX-Small</button>
+                        <button class="filter-size-btn">X-Small</button>
+                        <button class="filter-size-btn">Small</button>
+                        <button class="filter-size-btn">Medium</button>
+                        <button class="filter-size-btn">Large</button>
+                        <button class="filter-size-btn">X-Large</button>
+                        <button class="filter-size-btn">XX-Large</button>
+                        <button class="filter-size-btn">3X-Large</button>
+                        <button class="filter-size-btn">4X-Large</button>
+                      </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="filter-color-top d-flex justify-content-between align-items-center">
+                      <h4 class="mb-0">Dress Style</h4>
+                      <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="filter-products filter-dress-style">
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Casual</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Formal</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Party</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="filter-products-sub-div d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Gym</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <div class="filter-apply-btn">Apply Filter</div>
+                  </div>
+                </div>
+                <div class="col-md-8 p-2">
+                  <div class="category-product-div">
+                    <div class="category-product-list">
+                      <div class="container">
+                      <h3 class="mb-3 category-product-heading">Casual</h3>
+                        <div class="row">
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/10.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">Gradient Graphic T-shirt</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate3.5.png" class="rate-star category-rate-star" alt="">
+                              <p class="mb-0 rate-p">3.5/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex">
+                              <p class="mb-0">$145</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/11.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">Polo with Tipping Details</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate4.5.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex">
+                              <p class="mb-0">$180</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/12.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">Black Striped T-shirt</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate5.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">5.0/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex">
+                              <p class="mb-0">$120</p>
+                              <p class="mb-0 fake-price">$150</p>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/2.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">SKINNY FIT JEANS</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate3.5.png" class="rate-star category-rate-star" alt="">
+                              <p class="mb-0 rate-p">3.5/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex">
+                              <p class="mb-0">$240</p>
+                              <p class="mb-0 fake-price">$260</p>
+                              <div class="discount">-20%</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/3.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">CHECKERED SHIRT</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate4.5.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex mb-0">
+                              <p class="mb-0">$180</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col">
+                            <img src="assets/images/4.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">SLEEVE STRIPED T-SHIRT</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate4.5.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex mb-0">
+                              <p class="mb-0">$130</p>
+                              <p class="mb-0 fake-price">$160</p>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col d-lg-flex flex-column d-none">
+                            <img src="assets/images/5.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">VERTICAL STRIPED SHIRT</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate5.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">5.0/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex mb-0">
+                              <p class="mb-0">$212</p>
+                              <p class="mb-0 fake-price">$232</p>
+                              <div class="discount">-20%</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col d-lg-flex flex-column d-none">
+                            <img src="assets/images/6.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">COURAGE GRAPHIC T-SHIRT</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate4.png" class="rate-star" alt="">
+                              <p class="mb-0 rate-p">4.0/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex mb-0">
+                              <p class="mb-0">$145</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-6 category-product-col d-lg-flex flex-column d-none">
+                            <img src="assets/images/7.png" class="arrivals-img" alt="">
+                            <p class="mb-0 mt-3 category-product-name">LOOSE FIT BERMUDA SHORTS</p>
+                            <div class="product-rating d-flex mt-2 mb-2">
+                              <img src="assets/images/rate3.png" class="rate-star category-rate-star" alt="">
+                              <p class="mb-0 rate-p">3.0/<span>5</span></p>
+                            </div>
+                            <div class="product-price d-flex mb-0">
+                              <p class="mb-0">$80</p>
+                            </div>
+                          </div>
+                          <div class="container">
+                            <hr class="category-last-hr">
+                            <div class="category-pagination d-flex justify-content-between align-items-center">
+                              <div class="category-prev-btn d-flex align-items-center">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <p class="mb-0 ms-2">Previous</p>
+                              </div>
+                              <div class="number-div d-flex">
+                                <div class="number-sub-div first-number-sub-div">1</div>
+                                <div class="number-sub-div number-display-none">2</div>
+                                <div class="number-sub-div d-md-flex d-none">3</div>
+                                <div class="number-sub-div">...</div>
+                                <div class="number-sub-div d-md-flex d-none">8</div>
+                                <div class="number-sub-div number-display-none">9</div>
+                                <div class="number-sub-div">10</div>
+                              </div>
+                              <div class="category-next-btn d-flex align-items-center">
+                                <p class="mb-0 me-2">Next</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          <!-- =====  End Category Section  ===== -->
+     </div>
+
+    <!-- /* ===== Footer Section started =====  */ -->
+    <footer>
+      <div class="footer">
+        <div class="container p-2">
+          <div class="container email-container">
+            <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+            <div class="newsletter">
+              <form>
+                <input
+                  type="email"
+                  class="email"
+                  placeholder="Enter your email address"
+                /><span class="position-absolute email-icon"
+                  ><i class="fa-regular fa-envelope"></i
+                ></span>
+                <button type="submit">Subscribe to newsletter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-container">
+          <div class="row m-0 p-0 justify-content-between">
+            <div class="col-md-3 col-12">
+              <div class="footer-col">
+                <h2 class="footer-logo mb-3">SHOP.CO</h2>
+                <p class="footer-p">
+                  We have clothes that suits your style and which you’re proud
+                  to wear. From women to men.
+                </p>
+                <div class="social-links d-flex align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-f facebook"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram instagram"></i
+                  ></a>
+                  <a href=""><i class="fa-brands fa-github github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>COMPANY</h3>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Works</a></li>
+                  <li><a href="">Career</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>HELP</h3>
+                <ul>
+                  <li><a href="">Customer Support</a></li>
+                  <li><a href="">Delivery Details</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>FAQ</h3>
+
+                <ul>
+                  <li><a href="">Account</a></li>
+                  <li><a href="">Manage Deliveries </a></li>
+                  <li><a href="">Orders</a></li>
+                  <li><a href="">Payments </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>RESOURCES</h3>
+                <ul>
+                  <li><a href="">Free eBooks</a></li>
+                  <li><a href="">Development Tutorial</a></li>
+                  <li><a href="">How to - Blog</a></li>
+                  <li><a href="">Youtube Playlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hr mb-4"></div>
+        <div class="container subfooter-container pb-3">
+          <div class="row m-0 p-0">
+            <div class="col-md-6">
+              <p class="subfooter-p text-md-start text-center mb-2 mt-2">
+                Shop.co © 2000-2023, All Rights Reserved
+              </p>
+            </div>
+
+            <div
+              class="col-md-6 d-flex justify-content-md-end justify-content-center"
+            >
+              <div class="payment-partners d-flex align-items-center gap-3">
+                <div class="pp-logo">
+                  <img src="assets/images/Visa.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/Mastercard.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/Paypal.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/apple-pay.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/gpay.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====  Bootstrap JS  ===== -->
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+    <!-- =====  Font Awesome JS  ===== -->
+    <script src="assets/fonts/fontawsome/all.min.js"></script>
+
+    <!-- =====  Swiper JS  ===== -->
+
+    <script src="assets/Swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

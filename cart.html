@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Store</title>
+
+    <!-- =====  Bootstrap CSS  ===== -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+    <!-- =====  Custom CSS  ===== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- =====  Font Awesome CSS  ===== -->
+    <link rel="stylesheet" href="assets/fonts/fontawsome/all.min.css" />
+
+    <!-- =====  Swiper CSS  ===== -->
+    <link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- ----------------------------navbar started ----------------------------------------->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid align-items-center p-0">
+            <a
+              class="navbar-brand logo order-1 order-lg-0 me-auto me-lg-3 ms-3 ms-lg-0"
+              href="#"
+              >SHOP.CO</a
+            >
+            <button
+              class="navbar-toggler order-0 order-lg-1 hamburger"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Man</a></li>
+                    <li><a class="dropdown-item" href="#">Women</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Browse All</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >On Sale</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >New Arrivals</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underliner-hover"
+                    aria-current="page"
+                    href="#"
+                    >Brands</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex position-relative">
+                <input
+                  class="form-control me-2 form search-bar"
+                  type="search"
+                  placeholder="Search for products..."
+                  aria-label="Search"
+                /><i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </form>
+            </div>
+            <div class="nav-icons order-2">
+              <a href=""
+                ><i
+                  class="fa-solid fa-magnifying-glass d-static d-lg-none search-icon"
+                ></i
+              ></a>
+              <a href=""><i class="fa-solid fa-cart-shopping shop-icon"></i></a>
+              <a href=""><i class="fa-regular fa-circle-user user-icon"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ------------------------------Single Product started------------------------------------------->
+    <section id="cart-section">
+      <div class="container hr-1 breadcrumb-container ps-2">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb d-flex align-items-center mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <li class="breadcrumb-item active-page" aria-current="page">Cart</li>
+          </ol>
+        </nav>
+      </div>
+<!-- ========= Cart section started========== -->
+ 
+      <div class="cart-product">
+        <div class="container">
+          <h1 class="arrivals-heading cart-h1">Your cart</h1>
+          <div class="row cart-row">
+            <div class="col-md-7 col-12">
+              <div class="cart-card">
+                <div class="product-list-div d-flex">
+                  <img src="assets/images/10.png" class="cart-product-img" alt="">
+                  <div class="w-100 position-relative d-flex flex-column justify-content-around">
+                    <div class="cart-product-data">
+                      <p class="mb-0 cart-product-name">Gradient Graphic T-shirt</p>
+                      <p class="mb-0 cart-product-size">Size: <span>Large</span></p>
+                      <p class="mb-0 cart-product-color mt-1">Colour: <span>White</span></p>
+                    </div>
+                    <div>
+                      <p class="mb-0 cart-product-price">$145</p>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                    <div class="increase-div cart-increase-div d-flex align-items-center justify-content-between">
+                      <i class="fa-solid fa-minus"></i>
+                      <p class="mb-0">1</p>
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="product-list-div d-flex">
+                  <img src="assets/images/3.png" class="cart-product-img" alt="">
+                  <div class="w-100 position-relative d-flex flex-column justify-content-around">
+                    <div class="cart-product-data">
+                      <p class="mb-0 cart-product-name">CHECKERED SHIRT</p>
+                      <p class="mb-0 cart-product-size">Size: <span>Medium</span></p>
+                      <p class="mb-0 cart-product-color mt-1">Colour: <span>Red</span></p>
+                    </div>
+                    <div>
+                      <p class="mb-0 cart-product-price">$180</p>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                    <div class="increase-div cart-increase-div d-flex align-items-center justify-content-between">
+                      <i class="fa-solid fa-minus"></i>
+                      <p class="mb-0">1</p>
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="product-list-div d-flex">
+                  <img src="assets/images/2.png" class="cart-product-img" alt="">
+                  <div class="w-100 position-relative d-flex flex-column justify-content-around">
+                    <div class="cart-product-data">
+                      <p class="mb-0 cart-product-name">SKINNY FIT JEANS</p>
+                      <p class="mb-0 cart-product-size">Size: <span>Large</span></p>
+                      <p class="mb-0 cart-product-color mt-1">Colour: <span>Blue</span></p>
+                    </div>
+                    <div>
+                      <p class="mb-0 cart-product-price">$240</p>
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
+                    <div class="increase-div cart-increase-div d-flex align-items-center justify-content-between">
+                      <i class="fa-solid fa-minus"></i>
+                      <p class="mb-0">1</p>
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-12 order-col">
+              <div class="cart-card">
+                <h3 class="cart-order-h3">Order Summary</h3>
+                <div class="cart-sub-total cart-order-total-div d-flex justify-content-between">
+                  <p class="cart-order-p mb-0">Subtotal</p>
+                  <p class="cart-order-price mb-0">$565</p>
+                </div>
+                <div class="cart-discount cart-order-total-div d-flex justify-content-between">
+                  <p class="cart-order-p mb-0">Discount (-20%)</p>
+                  <p class="cart-order-price cart-discount-price mb-0">-$113</p>
+                </div>
+                <div class="cart-fee d-flex justify-content-between">
+                  <p class="cart-order-p mb-0">Delivery Fee</p>
+                  <p class="cart-order-price mb-0">$15</p>
+                </div>
+                <hr class="order-hr">
+                <div class="cart-total d-flex justify-content-between">
+                  <p class="cart-order-p mb-0">Total</p>
+                  <p class="cart-order-price mb-0">$467</p>
+                </div>
+                <div class="container cart-promo-container">
+                  <div class="row mt-4 mb-4 cart-promo-row">
+                    <div class="col-lg-8 col-md-12 col-8 cart-promo-code">
+                      <i class="fa-solid fa-tag"></i>
+                      <input type="text" placeholder="Add promo code">
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-4 mt-md-3 mt-lg-0 pe-0 apply-btn-col">
+                      <button class="cart-order-apply-btn">Apply</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="cart-checkout-btn">Go to Checkout <i class="fa-solid fa-arrow-right icons"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- =====  End Cart Product Section  ===== -->
+    
+    <!-- /* ===== Footer Section started =====  */ -->
+    <footer>
+      <div class="footer">
+        <div class="container p-2">
+          <div class="container email-container">
+            <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+            <div class="newsletter">
+              <form>
+                <input
+                  type="email"
+                  class="email"
+                  placeholder="Enter your email address"
+                /><span class="position-absolute email-icon"
+                  ><i class="fa-regular fa-envelope"></i
+                ></span>
+                <button type="submit">Subscribe to newsletter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-container">
+          <div class="row m-0 p-0 justify-content-between">
+            <div class="col-md-3 col-12">
+              <div class="footer-col">
+                <h2 class="footer-logo mb-3">SHOP.CO</h2>
+                <p class="footer-p">
+                  We have clothes that suits your style and which you’re proud
+                  to wear. From women to men.
+                </p>
+                <div class="social-links d-flex align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-f facebook"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram instagram"></i
+                  ></a>
+                  <a href=""><i class="fa-brands fa-github github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>COMPANY</h3>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Works</a></li>
+                  <li><a href="">Career</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>HELP</h3>
+                <ul>
+                  <li><a href="">Customer Support</a></li>
+                  <li><a href="">Delivery Details</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>FAQ</h3>
+
+                <ul>
+                  <li><a href="">Account</a></li>
+                  <li><a href="">Manage Deliveries </a></li>
+                  <li><a href="">Orders</a></li>
+                  <li><a href="">Payments </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <div class="footer-col">
+                <h3>RESOURCES</h3>
+                <ul>
+                  <li><a href="">Free eBooks</a></li>
+                  <li><a href="">Development Tutorial</a></li>
+                  <li><a href="">How to - Blog</a></li>
+                  <li><a href="">Youtube Playlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hr mb-4"></div>
+        <div class="container subfooter-container pb-3">
+          <div class="row m-0 p-0">
+            <div class="col-md-6">
+              <p class="subfooter-p text-md-start text-center mb-2 mt-2">
+                Shop.co © 2000-2023, All Rights Reserved
+              </p>
+            </div>
+
+            <div
+              class="col-md-6 d-flex justify-content-md-end justify-content-center"
+            >
+              <div class="payment-partners d-flex align-items-center gap-3">
+                <div class="pp-logo">
+                  <img src="assets/images/Visa.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/Mastercard.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/Paypal.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/apple-pay.svg" alt="" />
+                </div>
+                <div class="pp-logo">
+                  <img src="assets/images/gpay.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====  Bootstrap JS  ===== -->
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+    <!-- =====  Font Awesome JS  ===== -->
+    <script src="assets/fonts/fontawsome/all.min.js"></script>
+
+    <!-- =====  Swiper JS  ===== -->
+
+    <script src="assets/Swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

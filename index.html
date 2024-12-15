@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Store</title>
+
+    <!-- =====  Bootstrap CSS  ===== -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+    <!-- =====  Custom CSS  ===== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- =====  Font Awesome CSS  ===== -->
+    <link rel="stylesheet" href="assets/fonts/fontawsome/all.min.css" />
+
+    <!-- =====  Swiper CSS  ===== -->
+    <link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- ----------------------------navbar started ----------------------------------------->
+    <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid align-items-center p-0">
+          <a
+            class="navbar-brand logo order-1 order-lg-0 me-auto me-lg-3 ms-3 ms-lg-0"
+            href="#"
+            >SHOP.CO</a
+          >
+          <button
+            class="navbar-toggler order-0 order-lg-1 hamburger"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="category.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="sproduct.html">Man</a></li>
+                  <li><a class="dropdown-item" href="#">Women</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Browse All</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underliner-hover" aria-current="page" href="#">On Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underliner-hover" aria-current="page" href="#"
+                  >New Arrivals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underliner-hover" aria-current="page" href="#">Brands</a>
+              </li>
+            </ul>
+            <form class="d-flex position-relative">
+              <input
+                class="form-control me-2 form search-bar"
+                type="search"
+                placeholder="Search for products..."
+                aria-label="Search"
+              /><i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </form>
+          </div>
+          <div class="nav-icons order-2">
+            <a href=""
+              ><i
+                class="fa-solid fa-magnifying-glass d-static d-lg-none search-icon"
+              ></i
+            ></a>
+            <a href=""><i class="fa-solid fa-cart-shopping shop-icon"></i></a>
+            <a href=""><i class="fa-regular fa-circle-user user-icon"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <!-- ------------------------------Banner section started------------------------------------------->
+<section id="banner-section">
+    <div class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 banner-part1">
+            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p class="subheading">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
+            </p>
+            <button type="button" class="banner-btn">Shop Now</button>
+            <div class="banner-values d-flex">
+              <div class="international">
+                <h3 class="mb-0 count" data-target="200">0</h3>
+                <p class="mb-0">International Brands</p>
+              </div>
+              <div class="quality">
+                <h3 class="mb-0 count" data-target="2000">0</h3>
+                <p class="mb-0">High-Quality Products</p>
+              </div>
+              <div class="happycustomer">
+                <h3 class="mb-0 count" data-target="30000">0</h3>
+                <p class="mb-0">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 banner-part2 position-relative">
+            <img src="assets/images/banner-img.jpg" alt="" class="banner-img" />
+            <img src="assets/images/star.png" alt="" class="star1" />
+            <img src="assets/images/star2.png" alt="" class="star2" />
+          </div>
+        </div>
+      </div>
+      <div class="brands-div">
+        <div class="container brands-container d-flex justify-content-between">
+          <img src="assets/images/versace.png" alt="" />
+          <img src="assets/images/zara.png" alt="" />
+          <img src="assets/images/gucci.png" alt="" />
+          <img src="assets/images/prada.png" alt="" />
+          <img src="assets/images/ck.png" alt="" />
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- =====  End banner ection  ===== -->
+    <!-- ======== Arrivals section start ======= -->
+     <section id="arrivals-section">
+    <div class="arrivals">
+      <div class="container">
+        <h1 class="arrivals-heading">NEW ARRIVALS</h1>
+        <div class="row arr-row pb-4">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="assets/images/1.png" class="arrivals-img" alt="" id="p1" />
+            <p class="mb-0 mt-3 product-name">T-SHIRT WITH TAPE DETAILS</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate4.5.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$120</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-sm-0 mt-5">
+            <img src="assets/images/2.png" class="arrivals-img" alt=""id="p2" />
+            <p class="mb-0 mt-3 product-name">SKINNY FIT JEANS</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img
+                src="assets/images/rate3.5.png"
+                class="rate-star rate-star-2"
+                alt=""
+              />
+              <p class="mb-0 rate-p">3.5/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$240</p>
+              <p class="mb-0 fake-price">$260</p>
+              <div class="discount">-20%</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mt-md-0 mt-sm-5">
+            <img src="assets/images/3.png" class="arrivals-img" alt="" id="p3"/>
+            <p class="mb-0 mt-3 product-name">CHECKERED SHIRT</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate4.5.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$180</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mt-lg-0 mt-sm-5">
+            <img src="assets/images/4.png" class="arrivals-img" alt="" id="p4"/>
+            <p class="mb-0 mt-3 product-name">SLEEVE STRIPED T-SHIRT</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate4.5.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$130</p>
+              <p class="mb-0 fake-price">$160</p>
+              <div class="discount">-30%</div>
+            </div>
+          </div>
+        </div>
+        <div class="viewall text-center p-3">
+          <a href="#"><button type="button" class="viewall-btn">View All</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- ===top selling section ==== -->
+    <div class="container hr"></div>
+
+    <section id="topselling-section">
+    <div class="topselling">
+      <div class="container">
+        <h1 class="topselling-heading">TOP SELLING</h1>
+        <div class="row top-row pb-4">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="assets/images/5.png" class="topselling-img" alt="" id="p5"/>
+            <p class="mb-0 mt-3 product-name">VERTICAL STRIPED SHIRT</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate5.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">5.0/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$212</p>
+              <p class="mb-0 fake-price">$232</p>
+              <div class="discount">-20%</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-sm-0 mt-5">
+            <img src="assets/images/6.png" class="topselling-img" alt="" id="p6"/>
+            <p class="mb-0 mt-3 product-name">COURAGE GRAPHIC T-SHIRT</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img
+                src="assets/images/rate3.5.png"
+                class="rate-star rate-star-2"
+                alt=""
+              />
+              <p class="mb-0 rate-p">4.0/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$145</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mt-md-0 mt-sm-5">
+            <img src="assets/images/7.png" class="topselling-img" alt="" id="p7"/>
+            <p class="mb-0 mt-3 product-name">LOOSE FIT BERMUDA SHORTS</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate3.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">3.0/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$80</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mt-lg-0 mt-sm-5">
+            <img src="assets/images/8.png" class="topselling-img" alt="" id="p8"/>
+            <p class="mb-0 mt-3 product-name">FADED SKINNY JEANS</p>
+            <div class="product-rating d-flex mt-2 mb-2">
+              <img src="assets/images/rate4.5.png" class="rate-star" alt="" />
+              <p class="mb-0 rate-p">4.5/<span>5</span></p>
+            </div>
+            <div class="product-price d-flex">
+              <p class="mb-0">$210</p>
+            </div>
+          </div>
+        </div>
+        <div class="viewall text-center p-3">
+          <a href="#"><button type="button" class="viewall-btn">View All</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Diffrent Categories  -->
+     <section id="categories-section">
+    <div class="categories">
+      <div class="container categories-container">
+        <div class="row p-0 m-0">
+          <div class="col-12 p-0">
+            <h1 class="categories-heading p-0">BROWSE BY DRESS STYLE</h1>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-col categories-col1 p-0" id="casual-categories">
+              <p>Casual</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="categories-col categories-col2 p-0" id="formal-categories">
+              <p>Formal</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="categories-col categories-col3 p-0 " id="party-categories">
+              <p>Party</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-col categories-col4" id="gym-categories">
+              <p>Gym</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Swiper Slider (Happy customer slider)-->
+     <section id="customer-review-section">
+    <div class="customer-review">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h1 class="review-heading">OUR HAPPY CUSTOMERS</h1>
+          <div class="navigation-btns d-flex align-items-end gap-3 mb-3 me-5">
+            <div class="pre-btn"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="next-btn"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="swiper CustomerSwiper">
+          <div class="swiper-wrapper">
+            <!-- === Slide 1 ===  -->
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">Sarah M.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
+            </div>
+            <!-- === Slide 2 ===  -->
+
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">Alex K.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+            </div>
+
+            <!-- === Slide 3 ===  -->
+
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">James L.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </p>
+              </div>
+            </div>
+
+            <!-- === Slide 4 ===  -->
+
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">Shabbir K.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
+            </div>
+
+            <!-- === Slide 5 ===  -->
+
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">Imtiyaz M.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+            </div>
+
+            <!-- === Slide 6 ===  -->
+
+            <div class="swiper-slide">
+              <div class="customer-review-card">
+                <div class="rating-div pb-3">
+                  <img src="assets/images/rate5.png" alt="" />
+                </div>
+                <div class="customer-name d-flex align-items-center">
+                  <h5 class="mb-0 me-1">Hasan R.</h5>
+                  <img
+                    src="assets/images/verified.png"
+                    alt="Verified ☑"
+                    height="20px"
+                    width="20px"
+                  />
+                </div>
+                <p>
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- /* ===== Footer Section started =====  */ -->
+     <footer>
+    <div class="footer">
+      <div class="container p-2">
+        <div class="container email-container">
+          <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+          <div class="newsletter">
+            <form>
+              <input type="email" class="email" placeholder="Enter your email address"/><span
+                class="position-absolute email-icon"
+                ><i class="fa-regular fa-envelope"></i
+              ></span>
+              <button type="submit">Subscribe to newsletter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-container">
+        <div class="row m-0 p-0 justify-content-between">
+          <div class="col-md-3 col-12">
+            <div class="footer-col">
+              <h2 class="footer-logo mb-3">SHOP.CO</h2>
+              <p class="footer-p">
+                We have clothes that suits your style and which you’re proud to
+                wear. From women to men.
+              </p>
+              <div class="social-links d-flex align-items-center gap-2">
+                <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="footer-col">
+              <h3>COMPANY</h3>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-2 col-6">
+            <div class="footer-col">
+              <h3>HELP</h3>
+              <ul>
+                <li><a href="">Customer Support</a></li>
+                <li><a href="">Delivery Details</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="footer-col">
+              <h3>FAQ</h3>
+
+              <ul>
+                <li><a href="">Account</a></li>
+                <li><a href="">Manage Deliveries </a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Payments </a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-2 col-6">
+            <div class="footer-col">
+              <h3>RESOURCES</h3>
+              <ul>
+                <li><a href="">Free eBooks</a></li>
+                <li><a href="">Development Tutorial</a></li>
+                <li><a href="">How to - Blog</a></li>
+                <li><a href="">Youtube Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hr mb-4"></div>
+      <div class="container subfooter-container pb-3">
+        <div class="row m-0 p-0">
+          <div class="col-md-6">
+            <p class="subfooter-p text-md-start text-center mb-2 mt-2">Shop.co © 2000-2023, All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-md-end  justify-content-center">
+            <div class="payment-partners d-flex align-items-center gap-3">
+              <div class="pp-logo"><img src="assets/images/Visa.svg" alt=""></div>
+              <div class="pp-logo"><img src="assets/images/Mastercard.svg" alt=""></div>
+              <div class="pp-logo"><img src="assets/images/Paypal.svg" alt=""></div>
+              <div class="pp-logo"><img src="assets/images/apple-pay.svg" alt=""></div>
+              <div class="pp-logo"><img src="assets/images/gpay.svg" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </footer>
+
+    <!-- =====  Bootstrap JS  ===== -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+
+    <!-- =====  Font Awesome JS  ===== -->
+    <script src="assets/fonts/fontawsome/all.min.js"></script>
+
+    <!-- =====  Swiper JS  ===== -->
+
+    <script src="assets/Swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
