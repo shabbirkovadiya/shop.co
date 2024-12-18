@@ -122,11 +122,13 @@ form .search-icon {
   margin-right: 30px;
 }
 .search-icon,
-.cart-icon,
 .user-icon {
   margin: 0px 10px !important;
   font-size: 20px !important;
 }
+.shop-icon-active { 
+ border-bottom: 2px solid black;
+} 
 .nav-icons a {
   color: var(--black) !important;
 }
@@ -137,6 +139,17 @@ form .search-icon {
 .navbar {
   padding: 20px 0px;
 }
+.chevron-icon {
+  font-size: 0.8rem; /* Adjust size */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.nav-link.dropdown-toggle.show .chevron-icon {
+  transform: rotate(180deg); /* Rotate icon when dropdown is open */
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
 /* =====  banner Section   ===== */
 
 .banner-section {
@@ -146,14 +159,16 @@ form .search-icon {
 .banner-section h1 {
   margin: 100px 0px 32px 0px;
   font-family: "integral-bold";
-  font-size: 60px;
+  font-size: 64px;
+  font-weight: 700;
 }
 .subheading {
   font-family: "satoshi-regular";
-  font-size: 17px;
+  font-size: 16px;
   line-height: 22px;
   margin-bottom: 32px;
   color: var(--greytext);
+  font-weight: 400;
 }
 .banner-img {
   width: 100%;
@@ -176,6 +191,7 @@ form .search-icon {
 .banner-values h3 {
   font-family: "satoshi-bold";
   font-size: 40px;
+  font-weight: 700;
 }
 .banner-values {
   flex-wrap: wrap;
@@ -185,7 +201,7 @@ form .search-icon {
 }
 .banner-values p {
   font-family: "satoshi-regular";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   margin-bottom: 32px;
   color: var(--greytext) !important;
@@ -241,6 +257,7 @@ form .search-icon {
   line-height: 57.6px;
   text-align: center;
   margin-top: 72px;
+  font-weight: 700;
 }
 
 .arr-row {
@@ -255,8 +272,10 @@ form .search-icon {
 
 .product-name {
   font-family: "Satoshi-Bold";
-  font-size: 14px;
+  font-size: 20px;
   line-height: 27px;
+  font-weight: 700;
+  text-transform:capitalize;
 }
 
 .product-rating {
@@ -288,7 +307,7 @@ form .search-icon {
   line-height: 32.4px;
 }
 
-.fake-price {
+.fake-price { 
   color: #999999;
   margin: 0 10px;
   font-size: 20px;
@@ -306,7 +325,7 @@ form .search-icon {
   border-radius: 64px;
 }
 .viewall-btn {
-  padding: 16px 54px 16px 54px;
+  padding: 15px 80px 15px 80px;
   border-radius: 62px;
   border: 1px solid #0000001a;
   text-decoration: none;
@@ -827,6 +846,9 @@ background-color: var(--greybg);
   background-color: transparent;
   border-bottom: 2px solid var(--black);
 }
+.tab-rows {
+  justify-content: space-around !important;
+}
 
 .tab-p {
   color: var(--greytext);
@@ -1211,7 +1233,7 @@ background-color: var(--greybg);
 
 
 .cart-product {
-  margin-bottom: 162px;
+  margin-bottom: 120px;
 }
 
 .cart-h1 {
@@ -1227,13 +1249,16 @@ background-color: var(--greybg);
 }
 
 .cart-product-img {
-  width: 124px;
-  height: 124px;
+  width: 124px !important;
+  height: 124px !important;
   border-radius: 8.66px;
 }
 
 .cart-product-data {
   margin-left: 16px;
+}
+.cart-product-data-outer {
+  flex: auto;
 }
 
 .cart-product-name {
@@ -1370,7 +1395,7 @@ background-color: var(--greybg);
 }
 
 .cart-checkout-btn {
-  background-color: var(--black-color);
+  background-color: var(--black);
   color: #fff;
   border: 2px solid transparent;
   border-radius: 62px;
@@ -1777,7 +1802,10 @@ padding: 0;
 }
 
  /* -------------------Cart Page---------------- */
-
+ .cart-product-img {
+  width: 99px !important;
+  height: auto !important;
+}
 
 .cart-product-name {
   font-size: 14px;
